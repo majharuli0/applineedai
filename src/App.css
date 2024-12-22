@@ -1,0 +1,313 @@
+.home_crsl .group {
+  display: none !important;
+}
+.home_crsl .bg-white {
+  width: 30px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#step_l1,
+#step_l2,
+#step_l3 {
+  position: relative;
+}
+#step_l1 {
+  padding-top: 0px !important;
+  margin-top: 50px !important;
+}
+#step_l1::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  right: -22%;
+  width: 69px;
+  height: 16px;
+  background-image: url(./assets/home/services/l1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#step_l2 {
+  padding-top: 0px !important;
+  margin-top: 85px !important;
+}
+#step_l2::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  right: -22%;
+  width: 139px;
+  height: 20px;
+  background-image: url(./assets/home/services/l2.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#step_l3 {
+  padding-top: 0px !important;
+  margin-top: 58px !important;
+}
+#step_l3::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  right: -22%;
+  width: 71px;
+  height: 30px;
+  background-image: url(./assets/home/services/l3.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#step_r1,
+#step_r2,
+#step_r3 {
+  position: relative;
+}
+#step_r1 {
+  padding-top: 0px !important;
+  margin-top: 35px !important;
+}
+#step_r1::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: -22%;
+  width: 168px;
+  height: 25px;
+  background-image: url(./assets/home/services/r1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#step_r2 {
+  padding-top: 0px !important;
+  margin-top: 90px !important;
+}
+#step_r2::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: -22%;
+  width: 139px;
+  height: 20px;
+  background-image: url(./assets/home/services/r2.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#step_r3 {
+  padding-top: 0px !important;
+  margin-top: 40px !important;
+}
+#step_r3::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: -22%;
+  width: 148px;
+  height: 66px;
+  background-image: url(./assets/home/services/r3.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.brands img {
+  filter: grayscale(100%);
+}
+.brands img:hover {
+  filter: grayscale(0%);
+}
+#industries {
+  position: relative;
+  margin-top: 260px;
+  margin-bottom: 280px;
+  /* height: 85svh; */
+}
+
+#industries #images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  z-index: 0;
+}
+#industries #images img {
+  width: 220px !important;
+  height: 250px !important;
+  /* object-fit: contain; */
+}
+#industries #images img:nth-child(1) {
+  position: relative;
+  top: -30%;
+  left: -60%;
+}
+#industries #images img:nth-child(2) {
+  position: relative;
+  top: -60%;
+  /* left: -60%; */
+}
+#industries #images img:nth-child(3) {
+  position: relative;
+  top: -30%;
+  right: -60%;
+}
+#industries #images img:nth-child(4) {
+  position: relative;
+  bottom: -30%;
+  left: -60%;
+}
+#industries #images img:nth-child(5) {
+  position: relative;
+  bottom: -60%;
+  /* left: -60%; */
+}
+#industries #images img:nth-child(6) {
+  position: relative;
+  bottom: -30%;
+  right: -60%;
+}
+.highlight {
+  color: #2958ff;
+  font-weight: 600;
+  position: relative;
+}
+.highlight::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #2958ff;
+}
+#industries-articles .header {
+  position: relative;
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+#industries-articles .header::after {
+  content: "";
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 80px;
+  /* background-color: #2958FF; */
+  background: linear-gradient(to top, #2958ff, transparent);
+}
+#industries-articles .header::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 80px;
+  /* background-color: #2958FF; */
+  background: linear-gradient(to bottom, #2958ff, transparent);
+}
+.folder {
+  border-radius: 0px 24px 24px 24px;
+}
+@media (min-width: 984px) {
+  #lr_steps {
+    display: flex;
+  }
+  #lr_item {
+    display: none;
+  }
+}
+@media (max-width: 984px) {
+  #lr_item {
+    display: block;
+  }
+  #lr_steps {
+    display: none;
+  }
+  .article {
+    flex-direction: column-reverse !important;
+  }
+  .article .right img {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  #services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #workflow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 568px) {
+.circularPoints > .pointDetails{
+  width: 200px!important;
+  height: 200px !important;
+  overflow: hidden;
+  font-size: 13px !important;
+}
+.point{
+  width: 150px!important;
+  height: 150px !important;
+  overflow: hidden;
+  font-size: 13px !important;
+}
+  #lr_item .left {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 80px;
+  }
+  #lr_item .right {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 80px;
+  }
+  #services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #industries {
+    position: relative;
+    margin-top: 190px;
+    margin-bottom: 190px;
+  }
+  #industries #images {
+    gap: 0;
+  }
+  #workflow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #industries #images img:nth-child(1),
+  #industries #images img:nth-child(2),
+  #industries #images img:nth-child(3),
+  #industries #images img:nth-child(4),
+  #industries #images img:nth-child(5),
+  #industries #images img:nth-child(6) {
+    top: 0;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+    width: 85% !important;
+    height: 100% !important;
+  }
+  #industries #images img:nth-child(1),
+  #industries #images img:nth-child(2),
+  #industries #images img:nth-child(3) {
+    top: -90% !important;
+  }
+  #industries #images img:nth-child(4),
+  #industries #images img:nth-child(5),
+  #industries #images img:nth-child(6) {
+    top: 90% !important;
+  }
+
+  #industries #images img:nth-child(2) {
+    top: -98% !important;
+  }
+  #industries #images img:nth-child(5) {
+    top: 98% !important;
+  }
+}
