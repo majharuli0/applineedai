@@ -322,6 +322,7 @@ export default function Vision() {
           iconPosition="right"
           Icon={LuMoveUpRight}
           className="w-fit z-10"
+          onClick={() => (window.location.href = "/contact-us")}
         />
       </section>
     </>

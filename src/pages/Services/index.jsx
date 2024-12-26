@@ -136,13 +136,14 @@ export default function index() {
                   iconPosition="right"
                   Icon={IoGitNetwork}
                   className="w-fit z-10"
+                  onClick={() => (window.location.href = "/contact-us")}
                 />
               )}
             </div>
           </div>
         ))}
       </section>
-      <section
+      {/* <section
         id="showcase-videos"
         className="flex flex-col gap-12 w-full bg-primary py-20 px-4 items-center justify-center"
       >
@@ -189,7 +190,7 @@ export default function index() {
           Icon={LuMoveUpRight}
           className="w-fit z-10"
         />
-      </section>
+      </section> */}
       <section
         id="workflow"
         className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1440px] mt-0 mx-auto px-4 py-20 pt-28"
@@ -227,6 +228,7 @@ export default function index() {
           iconPosition="right"
           Icon={LuMoveUpRight}
           className="w-fit z-10"
+          onClick={() => (window.location.href = "/contact-us")}
         />
       </section>
     </>

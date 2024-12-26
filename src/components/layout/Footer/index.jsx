@@ -35,19 +35,28 @@ export default function Footer() {
           <h4 className="text-btn font-semibold text-primary uppercase mb-2">
             Menu
           </h4>
-          <a href="#" className="text-body-1 hover:text-primary">
+          <a href="/" className="text-body-1 hover:text-primary">
             Home
           </a>
-          <a href="#" className="text-body-1 hover:text-primary">
+          {/* <a href="#" className="text-body-1 hover:text-primary">
             About
+          </a> */}
+          <a href="/industries" className="text-body-1 hover:text-primary">
+            Industries
           </a>
-          <a href="#" className="text-body-1 hover:text-primary">
+          <a href="/services" className="text-body-1 hover:text-primary">
             Services
           </a>
-          <a href="#" className="text-body-1 hover:text-primary">
+          <a href="/vision-ai" className="text-body-1 hover:text-primary">
+            Vision AI
+          </a>
+          <a href="/contact-us" className="text-body-1 hover:text-primary">
             Contact
           </a>
-          <a href="#" className="text-body-1 hover:text-primary">
+          <a
+            href="https://blog.applineedai.com/"
+            className="text-body-1 hover:text-primary"
+          >
             Blog
           </a>
         </div>
@@ -57,18 +66,21 @@ export default function Footer() {
           <h4 className="text-btn font-semibold text-primary uppercase mb-2">
             Help
           </h4>
-          <a href="#" className="text-body-1 hover:text-primary">
+          <a
+            href="https://blog.applineedai.com/"
+            className="text-body-1 hover:text-primary"
+          >
             Blog
           </a>
-          <a href="#" className="text-body-1 hover:text-primary">
+          <a href="/contact-us" className="text-body-1 hover:text-primary">
             Contact Us
           </a>
-          <a href="#" className="text-body-1 hover:text-primary">
+          {/* <a href="#" className="text-body-1 hover:text-primary">
             Terms and Conditions
           </a>
           <a href="#" className="text-body-1 hover:text-primary">
             Privacy Policy
-          </a>
+          </a> */}
         </div>
 
         {/* Side 4: Newsletter Subscription */}

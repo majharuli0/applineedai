@@ -83,6 +83,7 @@ export default function index() {
             iconPosition="right"
             Icon={LuMoveUpRight}
             className="w-fit"
+            onClick={() => (window.location.href = "/contact-us")}
           />
         </div>
         <div className="right">
@@ -114,6 +115,7 @@ export default function index() {
               iconPosition="right"
               Icon={LuMoveUpRight}
               className="w-fit bg-white "
+              onClick={() => (window.location.href = "/contact-us")}
             />
           </div>
           <div className="relative home_crsl right w-full md:w-[500px] h-56 sm:h-64 xl:h-80  rounded-3xl !overflow-hidden">
@@ -148,6 +150,7 @@ export default function index() {
               iconPosition="right"
               Icon={LuMoveUpRight}
               className="w-fit "
+              onClick={() => (window.location.href = "/contact-us")}
             />
           </div>
         </div>

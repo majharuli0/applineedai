@@ -208,6 +208,7 @@ export default function index() {
           iconPosition="right"
           Icon={LuMoveUpRight}
           className="w-fit z-10"
+          onClick={() => (window.location.href = "/contact-us")}
         />
         <div id="images">
           <img src={hr2} alt="" />
@@ -258,6 +259,7 @@ export default function index() {
           iconPosition="right"
           Icon={LuMoveUpRight}
           className="w-fit z-10"
+          onClick={() => (window.location.href = "/contact-us")}
         />
       </section>
     </>
@@ -284,6 +286,9 @@ export const IndustriesArticle = ({ title, description, image, side }) => {
           iconPosition="right"
           Icon={LuMoveUpRight}
           className="w-fit"
+          onClick={() =>
+            (window.location.href = "https://blog.applineedai.com/")
+          }
         />
       </div>
       <div className="right">
