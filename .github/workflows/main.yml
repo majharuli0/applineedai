@@ -1,0 +1,32 @@
+name: CI/CD Pipeline for cPanel FTP Deployment
+
+on:
+  push:
+    branches:
+      - main  # Or the branch you want to trigger the deployment from
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Upload build folder to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftp.applineedai.com
+          username: applineedai@applineedai.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: /
