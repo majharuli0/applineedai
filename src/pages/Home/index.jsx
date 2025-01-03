@@ -102,7 +102,7 @@ export default function index() {
           <div className="left max-w-[500px] flex flex-col gap-6 justify-center items-center md:items-start">
             <div className="text flex flex-col gap-4">
               <h1 className="md:text-H2-bold text-H3-bold text-center md:text-left">
-                Empower Your Business With applinedAI, Build AI Vision
+                Empower Your Business With ApplineedAI, Build AI Vision
                 Applications in Any Industry
               </h1>
               <p className="text-body-1 md:text-body-2 text-center md:text-left opacity-80">
