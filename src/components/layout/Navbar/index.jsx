@@ -62,14 +62,14 @@ const Navbar = () => {
               >
                 Services
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/vision-ai"
                 className={({ isActive }) =>
                   isActive ? Style.activeItemCss : Style.itemCss
                 }
               >
                 Vision AI
-              </NavLink>
+              </NavLink> */}
               {/* <NavLink
                 to="/api"
                 className={({ isActive }) =>
@@ -134,14 +134,14 @@ const Navbar = () => {
             >
               Services
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/vision-ai"
               className={({ isActive }) =>
                 isActive ? Style.activeItemCss : Style.itemCss
               }
             >
               Vision AI
-            </NavLink>
+            </NavLink> */}
             {/* <NavLink
               to="/api"
               className={({ isActive }) =>

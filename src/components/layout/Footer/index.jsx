@@ -47,9 +47,9 @@ export default function Footer() {
           <a href="/services" className="text-body-1 hover:text-primary">
             Services
           </a>
-          <a href="/vision-ai" className="text-body-1 hover:text-primary">
+          {/* <a href="/vision-ai" className="text-body-1 hover:text-primary">
             Vision AI
-          </a>
+          </a> */}
           <a href="/contact-us" className="text-body-1 hover:text-primary">
             Contact
           </a>
